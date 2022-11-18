@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="com.jspiders.spring_core.beans.UniversityBean"
+		name="university1">
+		<property name="id" value="1" />
+		<property name="name" value="DBATU" />
+		<property name="school">
+			<list>
+				<bean class="com.jspiders.spring_core.beans.SchoolBean"
+					name="school1">
+					<property name="id" value="1" />
+					<property name="name" value="KECSP" />
+					<property name="count" value="2000" />
+					<property name="city" value="pandharpur" />
+				</bean>
+				<bean class="com.jspiders.spring_core.beans.SchoolBean"
+					name="school2">
+					<property name="id" value="2" />
+					<property name="name" value="SVERI" />
+					<property name="count" value="2000" />
+					<property name="city" value="pandharpur" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+</beans>
